@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <TextView
@@ -18,6 +20,7 @@
         android:layout_marginEnd="10dp"
         android:textAppearance="?attr/textAppearanceListItem"
         android:textSize="18sp"
+        android:textStyle="bold"
         tools:text="Title" />
 
     <TextView
@@ -28,7 +31,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="10dp"
         android:textAppearance="?attr/textAppearanceListItem"
         android:textSize="18sp"
@@ -36,46 +39,45 @@
 
     <TextView
         android:id="@+id/ranking"
-        android:layout_width="67dp"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="43dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:typeface="serif" />
 
     <ImageView
         android:id="@+id/book_image"
         android:layout_width="wrap_content"
-        android:layout_height="227dp"
-        android:layout_alignParentStart="true"
+        android:layout_height="166dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="119dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="118dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/book_description"
-        android:layout_width="387dp"
-        android:layout_height="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
         android:layout_below="@+id/book_author"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="9dp"
         android:text="TextView"
         android:textSize="12sp" />
 
     <Button
         android:id="@+id/buy_button"
-        android:layout_width="159dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/book_description"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Buy On Button" />
+        android:text="Buy On Button"
+        app:backgroundTint="#03A9F4" />
 </RelativeLayout>
